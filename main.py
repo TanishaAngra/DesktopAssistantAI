@@ -13,7 +13,7 @@ def chat(query):
     global chatStr
     print(chatStr)
     openai.api_key = apikey
-    chatStr += f"Harry: {query}\n Jarvis: "
+    chatStr += f"Tanisha: {query}\n Jarvis: "
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt= chatStr,
@@ -82,14 +82,14 @@ if __name__ == '__main__':
                 webbrowser.open(site[1])
         # todo: Add a feature to play a specific song
         if "open music" in query:
-            musicPath = "/Users/harry/Downloads/downfall-21371.mp3"
+            musicPath = "/Users/Downloads/downfall-21371.mp3"
             os.system(f"open {musicPath}")
 
         elif "the time" in query:
-            musicPath = "/Users/harry/Downloads/downfall-21371.mp3"
+            musicPath = "/Users/Downloads/downfall-21371.mp3"
             hour = datetime.datetime.now().strftime("%H")
             min = datetime.datetime.now().strftime("%M")
-            say(f"Sir time is {hour} bajke {min} minutes")
+            say(f"Sir time is {hour} and {min} minutes")
 
         elif "open facetime".lower() in query.lower():
             os.system(f"open /System/Applications/FaceTime.app")

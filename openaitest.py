@@ -6,7 +6,7 @@ openai.api_key = apikey
 
 response = openai.Completion.create(
   model="text-davinci-003",
-  prompt="Write an email to my boss for resignation?",
+  prompt="Write an email to hr applying for entry-level software developer role?",
   temperature=0.7,
   max_tokens=256,
   top_p=1,
@@ -22,7 +22,7 @@ print(response)
       "finish_reason": "stop",
       "index": 0,
       "logprobs": null,
-      "text": "\n\nSubject: Resignation\n\nDear [Name],\n\nI am writing to inform you of my intention to resign from my current position at [Company]. My last day of work will be [date].\n\nI have enjoyed my time at [Company], and I am grateful for the opportunity to work here. I have learned a great deal during my time in this position, and I am grateful for the experience.\n\nIf I can be of any assistance during this transition, please do not hesitate to ask.\n\nThank you for your understanding.\n\nSincerely,\n[Your Name]"
+      "text": "\n\nSubject: Application\n\nDear [Name],\n\nI am writing this letter to apply for the Software Engineer position at your company. I have recently graduated with a degree in Computer Science. I have done some projects in college and I know programming languages like Java, Python, and C++. I am looking for a job where I can use my skills.\n\nSincerely,\n[Your Name]"
     }
   ],
   "created": 1683815400,
